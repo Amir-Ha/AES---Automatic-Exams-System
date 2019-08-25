@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ComputerizedExamController">
+  <children>
+    <Label alignment="CENTER" layoutX="209.0" layoutY="8.0" text="Computerized Exam" textFill="#b2b2b2">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Label>
+    <ListView fx:id="examlst" layoutY="207.0" prefHeight="419.0" prefWidth="701.0" />
+    <Button id="submitbtn" fx:id="submitbtn" layoutX="604.0" layoutY="16.0" mnemonicParsing="false" onAction="#SubmitHandle" prefHeight="30.0" prefWidth="83.0" text="Submit" />
+    <Label fx:id="timelbl" alignment="CENTER" layoutX="13.0" layoutY="91.0" prefHeight="30.0" prefWidth="110.0" text="Time">
+      <textFill>
+        <Color blue="0.000" green="0.960" red="1.000" fx:id="x1" />
+      </textFill>
+    </Label>
+    <Label fx:id="notelbl" alignment="TOP_LEFT" layoutX="13.0" layoutY="177.0" prefHeight="30.0" prefWidth="676.0" text="Note for Student" textFill="$x1">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Label>
+    <Label fx:id="examlbl" alignment="TOP_CENTER" layoutX="214.0" layoutY="98.0" prefHeight="58.0" prefWidth="273.0" text="Exam" textAlignment="LEFT" textFill="$x1" />
+  </children>
+</AnchorPane>

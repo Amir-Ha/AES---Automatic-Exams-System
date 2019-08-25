@@ -1,0 +1,31 @@
+{
+    -fx-primary : #2A2E37;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-green:#2E7D32;
+}
+
+.root{
+    -fx-background-color: #2A2E37;
+}
+
+
+#startserverbtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+#stopbtn{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}

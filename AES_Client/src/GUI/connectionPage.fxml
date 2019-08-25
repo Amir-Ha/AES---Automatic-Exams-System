@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="512.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GUI.ConnectionController">
+  <children>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="169.0" layoutY="14.0" minHeight="51.0" prefHeight="51.0" prefWidth="175.0" text="Connection" textFill="#b2b2b2">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Label>
+    <TextField id="" fx:id="hosttxt" layoutX="137.0" layoutY="180.0" prefHeight="37.0" prefWidth="238.0" promptText="Host IP" />
+    <Label fx:id="hostlbl" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="222.0" prefHeight="18.0" prefWidth="238.0" text="" textFill="#ff3333" />
+    <Button fx:id="connectbtn" layoutX="137.0" layoutY="246.0" mnemonicParsing="false" onAction="#connectHandle" prefHeight="37.0" prefWidth="238.0" text="Connect">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>

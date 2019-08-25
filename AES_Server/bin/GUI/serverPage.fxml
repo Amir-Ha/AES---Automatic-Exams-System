@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="269.0" prefWidth="600.000022070315" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GUI.ServerController">
+  <children>
+    <Label id="title" alignment="CENTER" layoutX="212.0" layoutY="14.0" text="AES - Server" textFill="#b2b2b2">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Label>
+    <Button fx:id="startserverbtn" layoutX="285.0" layoutY="175.0" mnemonicParsing="false" onAction="#StartListeningHandle" prefHeight="25.0" prefWidth="123.0" text="Start Listening" />
+    <Label fx:id="statuslbl" alignment="TOP_CENTER" layoutX="174.0" layoutY="123.0" prefHeight="43.0" prefWidth="252.0" text="" textAlignment="CENTER">
+      <textFill>
+        <Color blue="0.129" green="0.800" red="0.000" fx:id="x1" />
+      </textFill>
+    </Label>
+    <Label id="port" layoutX="188.0" layoutY="175.0" prefHeight="25.0" prefWidth="90.0" text="Port : 7777" textFill="$x1">
+      <font>
+        <Font size="12.0" />
+      </font>
+    </Label>
+    <Button fx:id="stopbtn" cancelButton="false" disable="true" layoutX="285.0" layoutY="212.0" mnemonicParsing="false" onAction="#StopListeningHandle" prefHeight="25.0" prefWidth="123.0" text="Stop" />
+  </children>
+  <stylesheets>
+    <URL value="@server.css" />
+  </stylesheets>
+</AnchorPane>

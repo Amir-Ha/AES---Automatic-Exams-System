@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="347.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GUI.PrincipalController">
+  <children>
+    <Label alignment="CENTER" layoutX="174.0" layoutY="10.0" prefHeight="46.0" prefWidth="256.0" text="Principal" textFill="#b2b2b2">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Label>
+    <Button id="logoutbtn" fx:id="btnLogout" layoutX="514.0" layoutY="16.0" mnemonicParsing="false" onAction="#LogOutHandle" prefHeight="32.000099999997474" prefWidth="72.0" text="Log out" />
+    <Label id="welcomelbl" fx:id="namelbl" alignment="CENTER" contentDisplay="CENTER" layoutX="132.0" layoutY="129.0" prefHeight="21.0" prefWidth="337.0" text="" textFill="#ffff8d">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+    <Separator layoutY="172.0" prefHeight="4.0" prefWidth="611.0" />
+    <Button id="systembtn" alignment="CENTER" layoutX="10.0" layoutY="204.0" mnemonicParsing="false" onAction="#DetailsHandle" prefHeight="54.0" prefWidth="179.0" text="System Details">
+      <effect>
+        <Reflection />
+      </effect>
+    </Button>
+    <Button id="durationbtn" alignment="CENTER" layoutX="212.0" layoutY="204.0" mnemonicParsing="false" onAction="#DurationHandle" prefHeight="54.0" prefWidth="179.0" text="Duration Change Requests">
+      <effect>
+        <Reflection />
+      </effect>
+    </Button>
+    <Button id="reportsbtn" alignment="CENTER" layoutX="413.0" layoutY="204.0" mnemonicParsing="false" onAction="#ReportsHandle" prefHeight="54.0" prefWidth="179.0" text="Reports">
+      <effect>
+        <Reflection />
+      </effect>
+    </Button>
+  </children>
+</AnchorPane>

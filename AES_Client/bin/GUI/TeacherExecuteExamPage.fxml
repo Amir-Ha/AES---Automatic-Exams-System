@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.lang.String?>
+<?import javafx.collections.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="680.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GUI.TeacherExecuteExamController">
+  <children>
+    <TabPane layoutY="67.0" prefHeight="407.0" prefWidth="680.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Exam In Process">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ListView fx:id="examListView" prefHeight="414.0" prefWidth="680.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Execute New Exam">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Label fx:id="examlbl" alignment="TOP_CENTER" layoutY="103.0" prefHeight="276.0" prefWidth="680.0" text="Exam" textAlignment="CENTER" textFill="WHITE">
+                  <font>
+                    <Font name="Arial" size="14.0" fx:id="x1" />
+                  </font>
+                </Label>
+                <ComboBox id="examid" fx:id="examidcmb" layoutX="14.0" layoutY="60.0" prefHeight="30.0" prefWidth="198.0" promptText="Exam ID">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <TextField fx:id="codetxt" layoutX="223.0" layoutY="59.0" prefHeight="32.0" prefWidth="155.0" promptText="Code" />
+                <Button fx:id="executebtn" layoutX="388.0" layoutY="59.0" mnemonicParsing="false" onAction="#executeButtonHandler" prefHeight="32.0" prefWidth="116.0" text="Execute" />
+                <Label fx:id="messagelbl" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="623.0" text="" textFill="RED">
+                  <font>
+                    <Font size="16.0" fx:id="x2" />
+                  </font>
+                </Label>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Change Duration">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="449.0" prefWidth="680.0">
+              <children>
+                <Label id="examlbl" fx:id="changeExamlbl" alignment="TOP_CENTER" font="$x1" layoutX="14.0" layoutY="120.0" prefHeight="235.0" prefWidth="312.0" text="Exam" textAlignment="CENTER" textFill="WHITE" />
+                <ComboBox id="examid" fx:id="chngExamIDCmb" layoutX="14.0" layoutY="60.0" prefHeight="30.0" prefWidth="198.0" promptText="Exam ID">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <TextField id="codetxt" fx:id="chngNewDurationtxt" layoutX="223.0" layoutY="59.0" prefHeight="32.0" prefWidth="155.0" promptText="New Duration hh:mm:ss" />
+                <Button id="executebtn" layoutX="388.0" layoutY="59.0" mnemonicParsing="false" onAction="#SendRequestButtonHandler" prefHeight="32.0" prefWidth="116.0" text="Send Request" />
+                <Label id="messagelbl" fx:id="changemessagelbl" font="$x2" layoutX="16.0" layoutY="14.0" prefHeight="32.0" prefWidth="623.0" text="" textFill="RED" />
+                <TextArea fx:id="notetxt" layoutX="339.0" layoutY="120.0" prefHeight="235.0" prefWidth="331.0" promptText="Reason to change" wrapText="true" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Lock Exam">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ComboBox id="examid" fx:id="lockExamCmb" layoutX="241.0" layoutY="105.0" prefHeight="31.5" prefWidth="198.0" promptText="Exam In Process">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <Button id="executebtn" layoutX="272.0" layoutY="147.0" mnemonicParsing="false" onAction="#LockButtonHandler" prefHeight="32.0" prefWidth="136.0" text="Lock Exam" />
+                <Label id="messagelbl" fx:id="lockmesslbl" font="$x2" layoutX="29.0" layoutY="35.0" prefHeight="54.0" prefWidth="623.0" text="" textFill="RED" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <Label layoutX="243.0" layoutY="6.0" text="Execute Exam" textFill="#b2b2b2">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Label>
+    <Button id="backbtn" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#BackHandle" prefHeight="25.0" prefWidth="48.0" text="Back" />
+  </children>
+</AnchorPane>

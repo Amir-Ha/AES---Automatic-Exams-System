@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.TeacherExamsController">
+  <children>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="205.0" layoutY="4.0" text="Teacher's Exams" textFill="#b2b2b2">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Label>
+    <Button id="backbtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#PreviousPageHandle" text="Back" />
+    <TabPane layoutX="0.0" layoutY="62.0" prefHeight="544.0" prefWidth="641.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Existing Exams">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ListView fx:id="examsListView" prefHeight="513.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Create an Exam">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="420.0" prefWidth="600.0">
+              <children>
+                <Label fx:id="messagelbl" layoutX="12.0" layoutY="13.0" prefHeight="28.0" prefWidth="430.0" text="" textFill="RED">
+                  <font>
+                    <Font name="Arial" size="13.0" />
+                  </font>
+                </Label>
+                <TextField id="examIDtxt" fx:id="examidtxt" layoutX="254.0" layoutY="52.0" mouseTransparent="false" prefHeight="28.0" prefWidth="111.0" promptText="Exam ID" text="" />
+                <ComboBox id="courseCombo" fx:id="coursecmb" layoutX="130.0" layoutY="52.0" prefHeight="28.0" prefWidth="107.0" promptText="Course">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <Button id="checkidbtn" fx:id="checkidbtn" disable="false" layoutX="374.0" layoutY="50.0" mnemonicParsing="false" onAction="#CheckButtonHandle" prefHeight="28.0" prefWidth="70.0" text="Check ID">
+                           <font>
+                              <Font size="10.0" />
+                           </font></Button>
+                <ComboBox fx:id="questionidcmb" disable="true" layoutX="254.0" layoutY="93.0" prefHeight="28.0" prefWidth="111.0" promptText="Question ID">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <TextField id="examIDtxt" fx:id="questionnumtxt" disable="true" layoutX="254.0" layoutY="131.0" mouseTransparent="false" prefHeight="28.0" prefWidth="111.0" promptText="Question Number" text="" />
+                <TextField id="examIDtxt" fx:id="pointstxt" disable="true" layoutX="254.0" layoutY="171.0" mouseTransparent="false" prefHeight="28.0" prefWidth="111.0" promptText="Points" text="" />
+                <Label fx:id="pointslbl" layoutX="374.0" layoutY="171.0" prefHeight="28.0" prefWidth="33.0" text="0%" textFill="#41cc00" />
+                <Label fx:id="questionlbl" alignment="TOP_LEFT" disable="false" layoutX="9.0" layoutY="94.0" prefHeight="155.0" prefWidth="231.0" text="" textFill="WHITE">
+                  <font>
+                    <Font name="Arial" size="14.0" fx:id="x1" />
+                  </font>
+                </Label>
+                <Button fx:id="addbtn" disable="true" layoutX="254.0" layoutY="211.0" mnemonicParsing="false" onAction="#AddQuestionButtonHandle" prefHeight="28.0" prefWidth="111.0" text="Add question" />
+                <Button id="createexambtn" fx:id="createbtn" disable="true" layoutX="254.0" layoutY="296.0" mnemonicParsing="false" onAction="#CreateButtonHandle" prefHeight="28.0" prefWidth="148.0" text="Create Exam" />
+                <ComboBox id="courseCombo" fx:id="subjectcmb" layoutX="9.0" layoutY="52.0" prefHeight="28.0" prefWidth="107.0" promptText="Subject">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <Button id="addbtn" fx:id="restbtn" disable="true" layoutX="254.0" layoutY="258.0" mnemonicParsing="false" onAction="#RestButtonHandle" prefHeight="28.0" prefWidth="148.0" text="Reset" />
+                <TextArea fx:id="studentnotetxt" disable="true" layoutX="454.0" layoutY="93.0" prefHeight="105.0" prefWidth="173.0" promptText="Note for Students" wrapText="true" />
+                <TextArea fx:id="teachernotetxt" disable="true" layoutX="454.0" layoutY="211.0" prefHeight="114.0" prefWidth="173.0" promptText="Note for Teacher" wrapText="true" />
+                <Label fx:id="examlbl" alignment="TOP_LEFT" disable="false" focusTraversable="false" font="$x1" layoutX="18.0" layoutY="337.0" prefHeight="164.0" prefWidth="605.0" text="" textFill="WHITE" />
+                <TextField id="examIDtxt" fx:id="durationtxt" disable="true" layoutX="455.0" layoutY="50.0" mouseTransparent="false" prefHeight="28.0" prefWidth="173.0" promptText="Duration - hh:mm:ss" text="" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

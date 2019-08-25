@@ -1,0 +1,483 @@
+/* The color which are going to be used */
+/**{
+    -fx-primary : #2A2E37;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-green:#2E7D32;
+}*/
+
+/* Background which used for all windows */
+.root
+{
+    -fx-background-color: #2A2E37;
+}
+
+/* Connection Controller */
+#connectbtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+#hosttxt
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-font-size : 12pt;
+    -jfx-focus-color: #FFFF8D;
+	-fx-background-color: transparent;
+	-fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+	-fx-background-radius: 15px;
+}
+#hosttxt.error {
+	-fx-text-fill: #B2B2B2;
+    -fx-font-size : 12pt;
+    -jfx-focus-color: #FFFF8D;
+	-fx-background-color: transparent;
+	-fx-border-color: #d35244;
+    -fx-border-radius: 15px;
+	-fx-background-radius: 15px;
+
+}
+
+/* Login Controller */
+#loginbtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+#usernameText
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-font-size : 12pt;
+    -jfx-focus-color: #FFFF8D;
+	-fx-background-color: transparent;
+	-fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+	-fx-background-radius: 15px;
+}
+#usernameText.error {
+	-fx-text-fill: #B2B2B2;
+    -fx-font-size : 12pt;
+    -jfx-focus-color: #FFFF8D;
+	-fx-background-color: transparent;
+	-fx-border-color: #d35244;
+    -fx-border-radius: 15px;
+	-fx-background-radius: 15px;
+}
+#passwordtxt
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-font-size : 12pt;
+    -jfx-focus-color: #FFFF8D;
+	-fx-background-color: transparent;
+	-fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+	-fx-background-radius: 15px;
+}
+#passwordtxt.error {
+	-fx-text-fill: #B2B2B2;
+    -fx-font-size : 12pt;
+    -jfx-focus-color: #FFFF8D;
+	-fx-background-color: transparent;
+	-fx-border-color: #d35244;
+    -fx-border-radius: 15px;
+	-fx-background-radius: 15px;
+}
+
+/* Principal Page */
+#logoutbtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+#systembtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+#durationbtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+#reportsbtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+
+/* System Details Page */
+#backbtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+
+    -fx-background-color: #b2b2b2;
+}
+.list-cell { -fx-text-fill: black;  }
+.list-cell:odd { -fx-background-color: white;  }
+.list-cell:even { -fx-background-color: #b2b2b2;  }
+
+.buttonlst
+{
+    -fx-border-radius: 20px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+
+/* Duration Change Page */
+
+
+
+/* Reports Page */
+#teacherexambtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+#courseexambtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+#studentexambtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+#additionalreportsbtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+
+/* Teacher Page */
+
+#questionsbtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+#reportsbtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+#exambtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+#gradesbtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+#reportbtn
+{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+
+/* Questions Page */
+#savebtn
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+#addbtn
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+#choosequestioncb
+{
+	
+}
+.combo-box
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-font-size : 8.5pt;
+    -jfx-focus-color: #FFFF8D;
+	-fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+	-fx-background-radius: 15px;
+	-fx-prompt-text-fill: #B2B2B2;
+}
+.combo-box .list-cell 
+{
+    -fx-background: white;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em; 
+}
+#questionumberTF
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-font-size : 8.5pt;
+    -jfx-focus-color: #FFFF8D;
+	-fx-background-color: transparent;
+	-fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+	-fx-background-radius: 15px;
+}
+
+.text-input {
+    -fx-focus-color: #FFFF8D;
+  /*  -fx-faint-focus-color: #FFFF8D;*/
+    -fx-border-radius: 15px;
+    /*-fx-highlight-fill: #FFFF8D;*/
+    -fx-highlight-text-fill: white;
+	-fx-background-color:
+        -fx-focus-color,
+        -fx-control-inner-background,
+        -fx-faint-focus-color,
+        linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
+    -fx-background-insets: -0.2, 1, -1.4, 3;
+    -fx-background-radius: 3, 2, 4, 0;
+}
+
+.text-input.error {
+    -fx-focus-color: #d35244;
+    -fx-border-radius: 15px;
+    -fx-highlight-text-fill: white;
+	-fx-background-color:
+        -fx-focus-color,
+        -fx-control-inner-background,
+        -fx-faint-focus-color,
+        linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
+    -fx-background-insets: -0.2, 1, -1.4, 3;
+    -fx-background-radius: 3, 2, 4, 0;
+}
+
+#executebtn
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+
+#lockexambtn
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+
+#solveanexambtn
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+
+#gradesbtn
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+
+#examcodeTF
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-font-size : 8.5pt;
+    -jfx-focus-color: #FFFF8D;
+	-fx-background-color: transparent;
+	-fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+	-fx-background-radius: 15px;
+}
+
+#examcodeTF.error
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-font-size : 8.5pt;
+    -jfx-focus-color: #d35244;
+	-fx-background-color: transparent;
+	-fx-border-color: #d35244;
+    -fx-border-radius: 15px;
+	-fx-background-radius: 15px;
+}
+
+#studentidTF
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-font-size : 8.5pt;
+    -jfx-focus-color: #FFFF8D;
+	-fx-background-color: transparent;
+	-fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+	-fx-background-radius: 15px;
+}
+
+#studentidTF.error
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-font-size : 8.5pt;
+    -jfx-focus-color: #d35244;
+	-fx-background-color: transparent;
+	-fx-border-color: #d35244;
+    -fx-border-radius: 15px;
+	-fx-background-radius: 15px;
+}
+
+#startbtn
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+
+#manualbtn
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+
+#computerizedbtn
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+
+#submitbtn
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;	
+}
+
+#checkidbtn
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 9pt;
+}
+
+#createexambtn
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
+
+#submit
+{
+	-fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-font-size: 10pt;
+}
